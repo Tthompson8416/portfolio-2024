@@ -606,7 +606,7 @@ p {
   .header ul li a {
     font-size: 17px;
     margin: 1px;
-    padding: 35px;
+    padding: 15px;
   }
 
   .leftside {
@@ -663,13 +663,7 @@ p {
   .objective {
     width: 500px;
     margin-left: 275px;
-  }
-
-  .objective p {
-    width: 450px;
-    margin-left: -160px;
     margin-top: -50px;
-    font-size: 20px;
     text-align: justify;
   }
 
@@ -677,17 +671,18 @@ p {
     width: 300px;
     margin-top: -15px;
     margin-left: 120px;
-    font-size: 10px;
+    font-size: 18px;
+    padding: 3px;
   }
 
-  .about-me {
-    margin-left: 30px;
+  #about-me {
+    margin-left: 70px;
     margin-top: 100px;
   }
 
   .about-me h3 {
     margin-left: -35px;
-    font-size: 17px;
+    font-size: 25px;
   }
 
   .about-me h3::before {
@@ -703,7 +698,7 @@ p {
   .about-me p {
     width: 500px;
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     margin-top: -30px;
   }
