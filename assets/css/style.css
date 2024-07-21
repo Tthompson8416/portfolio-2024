@@ -884,7 +884,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .header ul {
-    margin-left: 670px;
+    margin-left: 1170px;
   }
 
   .header a {
@@ -1119,30 +1119,29 @@ p {
   }
 
   .leftside ul {
-    margin-top: -150px;
+    margin-top: -120px;
     margin-left: 45px;
     list-style-type: none;
   }
 
   .leftside ul li {
-    margin-bottom: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 35px;
   }
 
   .fa-2x {
-    font-size: .9em;
+    font-size: 1.5em;
   }
 
   .v1 {
-    margin-top: 130px;
-    margin-left: 31px;
-    height: 35px;
+    margin-top: 70px;
+    margin-left: 37px;
+    height: 40px;
   }
 
   .v2 {
-    margin-top: 280px;
-    margin-left: 31px;
-    height: 35px;
+    margin-top: 290px;
+    margin-left: 37px;
+    height: 40px;
   }
 
   .about-me {
