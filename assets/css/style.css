@@ -868,16 +868,16 @@ p {
     margin-left: 90px;
   }
 
-  .resume {
-    margin-left: -30px;
+  #resume {
+    margin-left: 50px;
   }
 
   .resume a {
     margin-left: 250px;
   }
 
-  .footer {
-    margin-left: 15px;
+  .footer h4 {
+    margin-left: -30px;
     margin-bottom: 10px;
   }
 }
