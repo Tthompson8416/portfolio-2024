@@ -1133,7 +1133,7 @@ p {
   }
 
   .v1 {
-    margin-top: 70px;
+    margin-top: 65px;
     margin-left: 37px;
     height: 40px;
   }
@@ -1145,13 +1145,13 @@ p {
   }
 
   .about-me {
-    margin-top: 45px;
+    margin-top: 40px;
     margin-left: -95px;
   }
 
   .about-me p {
     width: 420px;
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 50px;
   }
 
@@ -1166,7 +1166,7 @@ p {
   }
 
   #portfolio {
-    margin-left: 45px;
+    margin-left: 270px;
     margin-top: 200px;
   }
 
@@ -1174,36 +1174,49 @@ p {
     margin-top: 50px;
   }
 
+  .project-description p {
+    font-size: 14px;
+  }
+
   .img__wrap2{
     margin-top: 50px;
+  }
+
+  .project-description-2 p {
+    font-size: 14px;
   }
 
   .img__wrap3{
     margin-top: 50px;
   }
 
+  .project-description-3 p {
+    font-size: 14px;
+  }
+
   #contact {
     margin-top: -60px;
-    margin-left: -70px;
+    margin-left: 145px;
   }
 
   .contact a {
-    margin-left: 100px;
+    margin-left: 65px;
     font-size: 17px;
   }
 
   .contact p {
-    margin-left: 170px;
+    margin-left: 135px;
     font-size: 17px;
   }
 
-  .resume {
+  #resume {
     margin-top: 35px;
-    margin-left: -140px;
+    margin-left: 40px;
   }
 
   .footer h4 {
-    margin-left: -177px;
+    margin-left: -3px;
     font-size: 15px;
+    margin-bottom: -25px;
   }
 }
