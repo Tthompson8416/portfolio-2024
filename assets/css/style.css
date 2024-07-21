@@ -846,7 +846,7 @@ p {
 
   .contact h3 {
     margin-top: 50px;
-    margin-left: -35px;
+    margin-left: -75px;
     font-size: 25px;
   }
 
@@ -861,11 +861,11 @@ p {
   }
 
   .contact a {
-    margin-left: 30px;
+    margin-left: -5px;
   }
 
   .contact p {
-    margin-left: 130px;
+    margin-left: 90px;
   }
 
   .resume {
