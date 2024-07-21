@@ -709,8 +709,8 @@ p {
 
   .portfolio h3 {
     margin-top: -170px;
-    margin-left: -145px;
-    font-size: 17px;
+    margin-left: -197px;
+    font-size: 25px;
   }
 
   .portfolio h3::before {
@@ -724,11 +724,11 @@ p {
   }
 
   .img__wrap {
-    margin-left: 335px;
+    margin-left: 290px;
   }
 
   .img__wrap .project-title {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: -450px;
     margin-top: -25px;
   }
@@ -748,17 +748,17 @@ p {
 
   .project-description p {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .img__wrap2 {
-    margin-left: 335px;
+    margin-left: 290px;
     margin-top: 350px;
   }
 
   .img__wrap2 .project-title-2 {
-    font-size: 15px;
-    margin-left: -450px;
+    font-size: 20px;
+    margin-left: -460px;
     margin-top: -25px;
     padding: 1px;
   }
@@ -778,17 +778,17 @@ p {
 
   .project-description-2 p {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .img__wrap3 {
-    margin-left: 335px;
+    margin-left: 290px;
     margin-top: 350px;
   }
 
   .img__wrap3 .project-title-3 {
-    font-size: 15px;
-    margin-left: -450px;
+    font-size: 20px;
+    margin-left: -440px;
     margin-top: -25px;
   }
 
@@ -807,7 +807,8 @@ p {
 
   .project-description-3 p {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 17px;
+    text-align: left;
   }
 
   .img__wrap4 {
