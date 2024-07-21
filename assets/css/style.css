@@ -1044,30 +1044,27 @@ p {
 
 @media only screen and (min-width: 1200px) {
   .header ul {
-    margin-left: 130px;
+    margin-left: 980px;
   }
 
-  .header a {
-    font-size: 25px;
-  }
-  
   /*.header {
     margin-top: -30px;
     width: 120px;
     margin-left: -535px;
     display: flex;
     align-items: center;
-  }
+  } */
 
   .header ul li a {
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px;
-  } */
+    margin: 10px;
+  } 
 
   .name {
     margin-bottom: 25px;
-    margin-top: -45px;
-    width: 300px;
+    margin-top: 10px;
+    width: 500px;
     height: 200px;
     margin-left: 200px;
     display: flex;
@@ -1078,15 +1075,15 @@ p {
   .name h1 {
     margin-bottom: 20px;
     color: var(--secondary-font-color);
-    font-size: 20px;
-    margin-left: -300px;
+    font-size: 30px;
+    margin-left: -370px;
   }
 
   .name h2 {
     line-height: 0.1;
     margin-bottom: 50px;
-    font-size: 15px;
-    margin-left: -300px;
+    font-size: 25px;
+    margin-left: -465px;
   }
 
   .objective {
@@ -1095,24 +1092,25 @@ p {
   }
 
   .objective p {
-    width: 250px;
-    margin-left: -125px;
-    margin-top: -110px;
-    font-size: 12px;
-    text-align: center;
+    width: 480px;
+    margin-left: -90px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: justify;
     display: flex;
   }
 
   .btn {
-    font-size: 7px;
-    width: 150px;
-    margin-left: 140px;
+    font-size: 10px;
+    width: 165px;
+    margin-left: 117px;
     margin-bottom: 30px;
+    margin-top: 5px;
   }
 
   .btn a {
-    height: 10px;
-    padding-top: 8px;
+    padding: 4px;
   }
 
   .leftside {
