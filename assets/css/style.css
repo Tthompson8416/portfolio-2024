@@ -324,7 +324,7 @@ h3:after {
 .img-tint-2 {
   width: 550px;
   height: 375px;
-  background: url("../images/Horiseon-tinted.jpg");
+  background: url("../images/horiseon-tinted.jpg");
   background-size: cover;
 }
 
@@ -587,6 +587,7 @@ p {
 
 
 @media only screen and (min-width: 320px) {
+ 
   .header {
     margin-right: 1100px;
     display: flex;
