@@ -301,7 +301,7 @@ h3:after {
 .img-tint-1 {
   width: 550px;
   height: 375px;
-  background: url("../images/run\ buddy\ tinted\ image.jpg");
+  background: url("../images/run-buddy-tinted.jpg");
   background-size: cover;
 }
 
@@ -324,7 +324,7 @@ h3:after {
 .img-tint-2 {
   width: 550px;
   height: 375px;
-  background: url("../images/Horiseon-tinted-image.jpg");
+  background: url("../images/Horiseon-tinted.jpg");
   background-size: cover;
 }
 
@@ -348,12 +348,12 @@ h3:after {
 .img-tint-3 {
   width: 550px;
   height: 375px;
-  background: url("../images/Fridge-to-feast-tinted-image.png");
+  background: url("../images/fridge-to-feast-tinted.jpg");
   background-size: cover;
 }
 
 .img-tint-3:hover {
-  background: url("../images/Fridge-to-Feast-Pic.png");
+  background: url("../images/kitchen-ready-for-cooking.jpg");
   background-size: cover;
 }
 
@@ -1146,7 +1146,10 @@ p {
 
   .about-me {
     margin-top: 40px;
-    margin-left: -95px;
+  }
+
+  .about-me h3 {
+    margin-left: -20px;
   }
 
   .about-me p {
