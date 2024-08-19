@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  background-color: var(--main-bg-color);
   width: 1150px;
 }
 
@@ -17,7 +18,6 @@ body {
   --font-title: "Julius Sans One", sans-serif;
 }
 
-/* Variables */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,13 +25,13 @@ body {
   background-color: var(--main-bg-color);
 }
 
-/* Styling the Header */
+/* Header */
 .header {
   padding: 7px 35px;
   display: inline;
 }
 
-/* Styling the Unordered List */
+/* Navigation bar */
 .header ul {
   display: flex;
   justify-content: flex-end;
@@ -48,7 +48,6 @@ body {
   padding-left: 10px;
 }
 
-/* Styling the list item links */
 .header a {
   color: var(--secondary-font-color);
   margin-left: 5px;
@@ -62,8 +61,6 @@ body {
   color: var(--hl-link-color);
 }
 
-/* Styling resume anchor link in nav */
-
 .resume-nav {
   border: 2px solid rgb(46, 202, 202);
   padding: 10px;
@@ -75,7 +72,11 @@ body {
   background-color: rgba(46, 202, 202, 0.1);
 }
 
-/* Hero Style Start */
+/* Objective section */
+section {
+  padding: 20px;
+}
+
 .hero {
   width: 100vw;
   height: 150px;
@@ -83,20 +84,6 @@ body {
   justify-content: flex-start;
 }
 
-.hero span {
-  color: rgb(46, 202, 202);
-  font-size: 150px;
-}
-
-.name {
-  display: block;
-  justify-content: center;
-  margin-left: 350px;
-  margin-top: 100px;
-  width: 1200px;
-}
-
-/* Styling the header h1 */
 .name h1 {
   display: inline;
   color: var(--secondary-font-color);
@@ -104,8 +91,7 @@ body {
   font-size: 70px;
   line-height: 1.2;
   box-sizing: inherit;
-  margin-bottom: 120px;
-  margin-left: 200px;
+  margin-top: 30px;
 }
 
 .name h2 {
@@ -147,6 +133,7 @@ body {
   text-decoration: none;
 }
 
+/* External contact links section */
 .leftside {
   margin: 10px;
   position: fixed;
@@ -164,12 +151,12 @@ body {
   justify-content: space-around;
 }
 
-.leftside a {
-  color: var(--hl-link-color);
-}
-
 .leftside li {
   margin-bottom: 25px;
+}
+
+.leftside a {
+  color: var(--hl-link-color);
 }
 
 .leftside a:hover {
@@ -194,31 +181,13 @@ body {
   position: fixed;
 }
 
-body {
-  background-color: var(--main-bg-color);
-}
-
-.background {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 0px;
-}
-
-section {
-  padding: 20px;
-}
-
-/* Styling the section headers */
+/* Main content section headers */
 section h3 {
   width: 650px;
   height: 50px;
   color: var(--secondary-font-color);
   font-family: var(--font-title);
   font-weight: 600;
-}
-
-h3 {
   overflow: hidden;
   text-align: center;
 }
@@ -260,7 +229,7 @@ h3:after {
   width: 700px;
 }
 
-/* Portfolio Section */
+/* Projects section */
 #portfolio {
   margin-left: 625px;
   width: 200px;
@@ -310,10 +279,6 @@ h3:after {
   background-size: cover;
 }
 
-.img__wrap h4 {
-  margin-left: 780px;
-}
-
 .img__wrap2 {
   margin-top: 70px;
   position: relative;
@@ -331,11 +296,6 @@ h3:after {
 .img-tint-2:hover {
   background: url("../images/digital-marketing-meeting.jpg");
   background-size: cover;
-}
-
-.img__wrap2 h4 {
-  margin-left: -440px;
-  margin-top: 90px;
 }
 
 .img__wrap3 {
@@ -364,7 +324,7 @@ h3:after {
 }
 
 .img-tint-4 {
-  margin-top:-120px;
+  margin-top: -120px;
   width: 550px;
   height: 375px;
   background: url("../images/Battle-bots-tinted.jpg");
@@ -504,7 +464,6 @@ h3:after {
   margin: 5px;
 }
 
-/* Subtitle Text */
 .subtitle {
   color: white;
   position: relative;
@@ -518,7 +477,7 @@ h3:after {
   font-size: 72px;
 }
 
-/* Contact Me Section */
+/* Contact me section */
 .contact {
   font-size: 20px;
   color: var(--secondary-font-color);
@@ -542,7 +501,7 @@ p {
   margin-left: 150px;
 }
 
-/* Resume Section */
+/* Resume section */
 .resume {
   background-color: var(--main-bg-color);
   font-size: 20px;
@@ -580,9 +539,8 @@ p {
   color: var(--hl-link-color);
 }
 
-
+/* RWD min-width 320px start */
 @media only screen and (min-width: 320px) {
- 
   .header {
     margin-right: 1100px;
     display: flex;
@@ -591,13 +549,13 @@ p {
   }
 
   .header ul {
-  display: flex;
-  justify-content: flex-end;
-  font-family: var(--font-robo);
-  margin-top: 20px;
-  margin-left: 660px;
-  width: max-content;
-}
+    display: flex;
+    justify-content: flex-end;
+    font-family: var(--font-robo);
+    margin-top: 20px;
+    margin-left: 660px;
+    width: max-content;
+  }
 
   .header ul li a {
     font-size: 17px;
@@ -830,56 +788,57 @@ p {
     margin-left: -475px;
     padding: 1px;
   }
-  }
+}
 
-  .project-description-4 p {
-    margin-left: 10px;
-    font-size: 14px;
-    text-align: left;
-  }
+.project-description-4 p {
+  margin-left: 10px;
+  font-size: 14px;
+  text-align: left;
+}
 
-  #contact {
-    margin-left: 50px;
-  }
+#contact {
+  margin-left: 50px;
+}
 
-  .contact h3 {
-    margin-top: 50px;
-    margin-left: -75px;
-    font-size: 25px;
-  }
+.contact h3 {
+  margin-top: 50px;
+  margin-left: -75px;
+  font-size: 25px;
+}
 
-  .contact h3::before {
-    margin-right: 0%;
-    width: 80px;
-  }
+.contact h3::before {
+  margin-right: 0%;
+  width: 80px;
+}
 
-  .contact h3::after {
-    margin-right: -40%;
-    width: 80px;
-  }
+.contact h3::after {
+  margin-right: -40%;
+  width: 80px;
+}
 
-  .contact a {
-    margin-left: -5px;
-  }
+.contact a {
+  margin-left: -5px;
+}
 
-  .contact p {
-    margin-left: 90px;
-  }
+.contact p {
+  margin-left: 90px;
+}
 
-  #resume {
-    margin-left: 50px;
-  }
+#resume {
+  margin-left: 50px;
+}
 
-  .resume a {
-    margin-left: 250px;
-  }
+.resume a {
+  margin-left: 250px;
+}
 
-  .footer h4 {
-    margin-left: -30px;
-    margin-bottom: 10px;
-  }
+.footer h4 {
+  margin-left: -30px;
+  margin-bottom: 10px;
+}
+/* RWD min-width 320px end */
 
-
+/* RWD min-width 768px start */
 @media only screen and (min-width: 768px) {
   .header ul {
     margin-left: 1170px;
@@ -1038,26 +997,20 @@ p {
 
 .footer {
   margin-left: 125px;
-} 
+}
+/* RWD min-width 768px end */
 
+/* RWD min-width 1200px start */
 @media only screen and (min-width: 1200px) {
   .header ul {
     margin-left: 980px;
   }
 
-  /*.header {
-    margin-top: -30px;
-    width: 120px;
-    margin-left: -535px;
-    display: flex;
-    align-items: center;
-  } */
-
   .header ul li a {
     font-size: 15px;
     padding: 5px;
     margin: 10px;
-  } 
+  }
 
   .name {
     margin-bottom: 25px;
@@ -1160,7 +1113,7 @@ p {
     right: 0.7em;
     margin-left: -50%;
   }
-  
+
   h3:after {
     left: 0.7em;
     margin-right: -50%;
@@ -1171,7 +1124,7 @@ p {
     margin-top: 200px;
   }
 
-  .img__wrap{
+  .img__wrap {
     margin-top: 50px;
   }
 
@@ -1179,7 +1132,7 @@ p {
     font-size: 14px;
   }
 
-  .img__wrap2{
+  .img__wrap2 {
     margin-top: 50px;
   }
 
@@ -1187,7 +1140,7 @@ p {
     font-size: 14px;
   }
 
-  .img__wrap3{
+  .img__wrap3 {
     margin-top: 50px;
   }
 
@@ -1221,3 +1174,5 @@ p {
     margin-bottom: -25px;
   }
 }
+/* RWD min-width 1200px end */
+
