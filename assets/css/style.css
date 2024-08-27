@@ -398,7 +398,7 @@ h3:after {
 .project-title-3,
 .project-title-4 {
   position: absolute;
-  top: -40px;
+  top: -45px;
   left: 0;
   background-color: var(--main-bg-color);
   padding: 5px 10px;
