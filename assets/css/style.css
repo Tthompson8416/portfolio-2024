@@ -577,12 +577,13 @@ h3:after {
 .objective p {
   color: var(--main-font-color);
   font-family: var(--main-font);
-  font-size: 35px;
+  font-size: 2rem;
   max-width: 690px;
-  text-align: justify;
-  /* margin: 0 auto; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
   width: 600%;
-  margin-left: 50px;
+  margin-left: 35px;
 }
 
 .btn a {
