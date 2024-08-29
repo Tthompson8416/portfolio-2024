@@ -169,7 +169,9 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 340px); /* Adjust this value based on v1 and v2 positions */
+  height: calc(
+    100vh - 340px
+  ); /* Adjust this value based on v1 and v2 positions */
   line-height: 0.5;
   margin-left: 30px;
   background-color: transparent; /* Make the background transparent */
@@ -199,7 +201,12 @@ section {
   font-size: 30px;
   padding: 5px;
   margin: 0;
-  background-color: rgba(40, 40, 43, 0.7); /* Semi-transparent background for icons */
+  background-color: rgba(
+    40,
+    40,
+    43,
+    0.7
+  ); /* Semi-transparent background for icons */
   border-radius: 50%; /* Make the background circular */
   display: inline-block; /* Ensure the background only covers the icon */
 }
@@ -532,12 +539,13 @@ h3:after {
     margin-bottom: 20px;
   }
 
-  .fa-brands, .fab {
+  .fa-brands,
+  .fab {
     font-family: "Font Awesome 6 Brands";
     font-weight: 400;
     padding-top: 15px;
     padding-bottom: 20px;
-}
+  }
 
   main {
     padding-left: 60px; /* Add some padding to prevent content from being hidden behind the leftside */
@@ -570,7 +578,8 @@ h3:after {
   .name {
     width: 200%;
     margin-left: 30px;
-    max-width: 800px;  }
+    max-width: 800px;
+  }
 }
 
 .objective p {
@@ -604,9 +613,9 @@ h3:after {
   margin-left: 200px;
 }
 
-.project-description p, 
-.project-description-2 p, 
-.project-description-3 p, 
+.project-description p,
+.project-description-2 p,
+.project-description-3 p,
 .project-description-4 p {
   font-size: 2rem;
 }
@@ -619,28 +628,195 @@ h3:after {
   margin-left: 375px;
 }
 
-
-
 @media only screen and (min-width: 401px) and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 60px; /* Add space for the leftside container */
+  }
+
+  .header {
+    width: calc(170% - 60px);
+    margin-left: 330px;
+  }
+
+  .header a {
+    color: var(--secondary-font-color);
+    margin: 0 15px;
+    font-size: 1.6rem;
+  }
+
+  .name {
+    width: calc(200% - 60px);
+    max-width: calc(200% - 60px);
+    margin-left: 20px;
+    text-align: center;
+  }
+  .name h1 {
+    font-size: 60px;
+  }
+
+  .name h2 {
+    font-size: 40px;
+  }
+
+  /* Center and resize objective */
+  .objective {
+    width: calc(100% - 60px);
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+
+  .objective p {
+    font-size: 1.9rem;
+    max-width: 230%;
+    margin-left: 10px;
+  }
+
+  /* Center and resize button */
+  .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 325px;
+  }
+
+  .btn a {
+    margin-left: 0;
+    width: auto;
+    font-size: 1.5rem;
+  }
+
+  .about-me h3 {
+    margin-left: -50px;
+    font-size: 2.5rem;
+  }
+
+  .leftside {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftside ul {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    height: 50vh; /* Increase height to add more space between icons */
+    margin-top: 150px;
+    margin-left: 30px;
+  }
+
+  .leftside li {
+    margin: 20px 0;
+  }
+
+  .v1,
+  .v2 {
+    display: block;
+    position: fixed;
+    left: 30px; /* Adjust this value to maintain space between leftside and lines */
+    width: 1px;
+    background-color: rgba(245, 245, 245, 0.5);
+  }
+
+  .v1 {
+    top: calc(50% - 170px);
+    height: 100px;
+  }
+
+  .v2 {
+    top: calc(50% + 70px);
+    height: 100px;
+  }
+
+  .portfolio {
+    width: calc(100% - 60px);
+    max-width: calc(100% - 60px);
+    margin-left: 0;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    width: 100%;
+  }
+
   .img__wrap,
   .img__wrap2,
   .img__wrap3,
   .img__wrap4 {
-    width: 500px;
-    margin-bottom: 170px;
-
+    width: 200%;
+    max-width: 550px;
+    margin-left: 350px;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 80px;
   }
+
+  .portfolio h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 318px;
+    font-size: 2.5rem;
+  }
+}
+
+/* Adjust project descriptions */
+.project-description,
+.project-description-2,
+.project-description-3,
+.project-description-4 {
+  height: 30%;
+  width: 92%;
+  bottom: -40px;
+  left: 46%;
+  transform: translateX(-50%);
+}
 
 .project-description p,
 .project-description-2 p,
 .project-description-3 p,
 .project-description-4 p {
   font-size: 1.5rem;
-  line-height: 10px;
-  margin-top: 10px;
-}
+  line-height: 1.2;
+  width: 100%;
 }
 
+.contact h3 {
+font-size: 2.5rem;
+}
+
+.resume h3 {
+  font-size: 2.5rem;
+}
+
+/* Center footer */
+.footer {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer h4 {
+  width: 150%;
+  margin-left: 90px;
+  font-size: 1.9rem;
+}
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
