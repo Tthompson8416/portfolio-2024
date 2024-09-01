@@ -555,7 +555,8 @@ h3:after {
   }
 
   .header ul {
-    margin-right: -5px;
+    margin-left: 12px;
+    margin-bottom: 20px;
   }
 
   .name h1,
@@ -599,7 +600,7 @@ h3:after {
   .leftside {
     position: fixed;
     left: 10px;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     z-index: 100;
     display: flex;
@@ -612,17 +613,16 @@ h3:after {
 
   .leftside ul {
     flex-direction: column;
-    margin-top: 180px;
     height: auto;
   }
 
   .leftside li {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 
   .leftside a {
-    font-size: 1.2rem;
-    margin-left: -10px;
+    font-size: 1.1rem;
+    margin-left: -15px;
   }
 
   .fa-brands,
@@ -633,140 +633,34 @@ h3:after {
 
   .v1,
   .v2 {
-    left: 4px;
-    margin-top: 70px;
+    left: 13px;
+    margin-top: -70px;
     height: 60px;
   }
   .v2 {
     margin-top: 130px;
   }
+
+  .project-image {
+    padding-bottom: 100%;
+  }
+
+  .project-wrapper {
+    width: 50%;
+    margin-left: 180px;
+    margin-bottom: 160px;
+  }
+
+  .contact a, .contact p{
+    font-size: 1.5rem;
+  }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .header,
-  .about-me,
-  .portfolio,
-  .contact,
-  .resume,
-  .footer {
-    padding: 0 20px;
-    box-sizing: border-box;
-    width: 100%; /* Changed from 170% to 100% */
-    margin-right: 0; /* Removed negative margin */
-  }
-
-  .header {
-    width: 300%; /* Changed from 170% to 100% */
-    margin-left: 160px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .header ul {
-    margin-left: 0;
-    width: 100%; /* Changed from auto to 100% */
-    display: flex;
-    justify-content: center;
-  }
-
-  .header a {
-    color: var(--secondary-font-color);
-    margin: 0 5px; /* Reduced side margins */
-    font-size: 1rem; /* Slightly reduced font size */
-  }
-
-  .name,
-  .objective,
-  .about-me,
-  .portfolio,
-  .contact,
-  .resume,
-  .footer {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    text-align: center;
-    margin-right: 0;
-  }
-
-  .name {
-    width: 100%; /* Changed from calc(200% - 60px) to 100% */
-    max-width: 100%;
-    margin-left: 70px;
-    text-align: center;
-  }
-
-  .name h1 {
-    font-size: 2.5rem; /* Reduced font size */
-  }
-
-  .name h2 {
-    font-size: 1.8rem; /* Reduced font size */
-  }
-
-  .objective {
-    width: 137%;
-    max-width: 200%;
-    margin: 0 auto;
-  }
-
-  .objective p {
-    font-size: 1.2rem;
-    max-width: 100%;
-    margin-left: 7px;
-  }
-
-  .btn {
-    width: 130%;
-    margin-left: 0; /* Removed margin */
-    display: flex;
-    justify-content: center;
-  }
-
-  .btn a {
-    margin-left: 150px;
-    width: auto;
-    font-size: 1.5rem;
-    padding: 8px 16px;
-  }
-
-  .about-me h3 {
-    margin-left: 0;
-    font-size: 2.2rem; /* Slightly reduced font size */
-  }
-
-  .about-me p {
-    width: 100%;
-    margin-left: 0;
-    font-size: 1.8rem; /* Added font size */
-  }
-
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
   .leftside {
     position: fixed;
-    top: 650px;
+    top: 550px;
     left: 10px;
     width: 40px;
     height: auto;
@@ -776,7 +670,7 @@ h3:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
   }
 
   .leftside ul {
@@ -784,18 +678,18 @@ h3:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 10px 15px 140px 0px;
     height: 50px;
   }
 
   .leftside li {
-    margin-bottom: 45px; /* Space between icons */
+    margin-bottom: 7px;
   }
 
   .leftside a {
-    font-size: 20px; /* Adjust icon size */
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -804,165 +698,103 @@ h3:after {
   .v1,
   .v2 {
     width: 1px;
-    height: 70px; /* Adjust line length */
+    height: 50px;
     background-color: rgba(245, 245, 245, 0.5);
-    margin-left: -1px;
+    margin-left: -3px;
   }
 
   .v1 {
-    margin-bottom: 20px; /* Space above icons */
+    margin-bottom: 10px;
   }
 
   .v2 {
-    margin-top: 50px; /* Space below icons */
-  }
-
-  .portfolio {
-    padding: 50px 20px;
-  }
-
-  .project-container {
-    grid-template-columns: 1fr;
-    padding: 0 10px;
-    width: 100%;
-    margin-left: 0; /* Removed margin */
-    margin-top: 50px;
-  }
-
-  .portfolio h3 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-left: 0; /* Removed margin */
-    font-size: 2.2rem; /* Slightly reduced font size */
-  }
-
-  .project-description p,
-  .project-description-2 p,
-  .project-description-3 p,
-  .project-description-4 p {
-    font-size: 1.3rem; /* Reduced font size */
-    line-height: 1.3;
-    width: 100%;
-  }
-
-  .contact h3,
-  .resume h3 {
-    font-size: 2.2rem; /* Slightly reduced font size */
-  }
-
-  .contact p {
-    font-size: 1.8rem; /* Reduced font size */
-  }
-
-  .footer h4 {
-    width: 100%;
-    margin-left: 0;
-    font-size: 1.8rem; /* Reduced font size */
-  }
-}
-
-/* Add a media query for smaller screens */
-@media screen and (max-width: 767px) {
-  .header {
-    justify-content: flex-start; /* Change to left-align on small screens */
-    padding: 0;
-  }
-
-  .header ul {
-    justify-content: flex-start;
-    padding: 10px 0;
-  }
-
-  .header ul li {
-    padding: 10px 15px;
+    margin-top: -40px;
   }
 }
 
 /* Tablet layout */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .project-wrapper {
-    width: 48%;
-    margin: 0 1% 40px 1%;
-  }
-
-  /* Step 1: Adjust the project container */
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .project-image {
-    padding-bottom: 75%; /* 4:3 aspect ratio */
-  }
-
-  .project-description,
-  .project-description-2,
-  .project-description-3,
-  .project-description-4 {
-    bottom: -40px; /* Adjust position */
-  }
-}
-
-@media only screen and (min-width: 865px) and (max-width: 1023px) {
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
   .leftside {
-    left: 5px; /* Adjust left position */
-  }
-
-  main {
-    padding-left: 60px; /* Add left padding to main content */
-  }
-}
-
-/* Media query for 1024px and above (Desktop) */
-@media only screen and (min-width: 1024px) {
-  .project-container {
+    position: fixed;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 340px);
   }
 
-  .project-wrapper {
-    width: 45%;
-    margin: 0 2.5% 40px 2.5%;
+  .leftside ul {
+    margin-top: 100px;
   }
 
-  .project-wrapper:nth-child(2n) {
-    margin-right: 0; /* Remove right margin for every second item */
+  .leftside li {
+    margin-bottom: 30px;
   }
 
-  .project-description,
-  .project-description-2,
-  .project-description-3,
-  .project-description-4 {
-    bottom: -30px; /* Further adjust position for larger screens */
+  .leftside a {
+    font-size: 1.3rem;
+  }
+
+  .v1,
+  .v2 {
+    left: 20px;
+    width: 1px;
+    background-color: rgba(245, 245, 245, 0.5);
+    margin-left: 15px;
+  }
+
+  .v1 {
+    top: calc(53% - 170px);
+    height: 100px;
+    margin-top: -80px;
+  }
+
+  .v2 {
+    top: calc(58% + 70px);
+    height: 100px;
+    margin-top: 220px;
   }
 }
+
+/* Desktop layout */
+@media only screen and (min-width: 1024px) {
+  .leftside {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 340px);
+  }
+
+  .leftside ul {
+    margin-top: 400px;
+  }
+
+  .leftside li {
+    margin-bottom: 105px;
+  }
+
+  .leftside a {
+    font-size: 1.4rem;
+  }
+}
+
+/* ... (rest of the desktop styles) ... */
+
+/* overrriding media queries */
 @media only screen and (min-width: 1200px) {
   .project-container {
     max-width: 100%;
     margin: 0 auto;
   }
 }
-
-/*
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-} */
 
 @media only screen and (min-width: 1150px) {
   body {
