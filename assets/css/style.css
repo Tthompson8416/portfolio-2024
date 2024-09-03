@@ -14,20 +14,18 @@
   padding: 0;
   margin: 0;
   background-color: var(--main-bg-color);
-  border: none; /* Remove the border */
-  outline: none; /* Remove any outline */
+  border: none;
+  outline: none;
 }
 
-Copy/* Scrollbar styles */
-* {
+* Scrollbar styles */ * {
   scrollbar-width: thin;
   scrollbar-color: var(--secondary-font-color) var(--main-bg-color);
 }
 
-/* Webkit browsers like Chrome, Safari */
 *::-webkit-scrollbar {
   width: 10px;
-  height: 10px;
+  height: 6px;
 }
 
 *::-webkit-scrollbar-track {
@@ -35,9 +33,32 @@ Copy/* Scrollbar styles */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-font-color);
-  border-radius: 5px;
-  border: 2px solid var(--main-bg-color);
+  background-color: var(--hl-link-color);
+  border-radius: 3px;
+}
+
+/* Ensure vertical scrollbar is always visible */
+html {
+  overflow-y: scroll;
+}
+
+.header {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.header::-webkit-scrollbar {
+  height: 6px;
+}
+
+.header::-webkit-scrollbar-track {
+  background: var(--main-bg-color);
+}
+
+.header::-webkit-scrollbar-thumb {
+  background-color: var(--hl-link-color);
+  border-radius: 3px;
 }
 
 html,
@@ -109,11 +130,11 @@ main {
   justify-content: center;
   font-family: var(--font-robo);
   margin-top: 20px;
-  flex-wrap: nowrap; /* Add this line */
-  white-space: nowrap; /* Add this line */
-  padding: 0; /* Add this line */
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding: 0;
   margin: 0;
-  width: auto; /* Add this line */
+  width: auto;
 }
 
 .header ul li {
@@ -241,14 +262,14 @@ section {
 
 .leftside ul {
   font-size: 30px;
-  padding: 5px; /* Adjust padding around the icons if necessary */
-  margin: 0px; /* Ensure no extra margin is added */
+  padding: 5px;
+  margin: 0px; 
   color: var(--hl-link-color);
   font-size: 30px;
   padding: 5px;
   margin: 0;
-  border-radius: 50%; /* Make the background circular */
-  display: inline-block; /* Ensure the background only covers the icon */
+  border-radius: 50%;
+  display: inline-block; 
 }
 
 .leftside ul li {
@@ -293,12 +314,11 @@ section {
   background-color: transparent;
 }
 
-/* Add this new rule */
+
 .leftside {
   background-color: transparent;
 }
 
-/* Add this after your existing .leftside styles */
 .leftside a,
 .leftside a i {
   background-color: transparent !important;
@@ -337,8 +357,10 @@ section h3 {
   color: var(--secondary-font-color);
   font-family: var(--font-title);
   font-weight: 600;
+  font-size: 1.5rem;
   overflow: hidden;
   text-align: center;
+  margin-left: 40px;
 }
 
 h3:before,
@@ -418,23 +440,21 @@ h3:after {
   padding: 0 20px;
 }
 
-/* Add this new style */
 .project-container > * {
-  margin: 20px; /* Apply consistent margin to all direct children */
+  margin: 20px; 
 }
 
 /* Individual project styles */
 .project-wrapper {
-  width: 100%; /* Full width on mobile */
+  width: 100%; 
   margin-bottom: 40px; /* Space between projects */
   position: relative;
 }
 
-/* Styles for project image, title, and description */
 .project-image {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; /* 4:3 aspect ratio */
+  padding-bottom: 75%; 
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -564,140 +584,152 @@ h3:after {
   color: var(--secondary-font-color);
 }
 
-/* Media Queries */
+/* Media query: mobile devices */
 @media only screen and (max-width: 400px) {
-  
-    .main-content {
-      margin-left: 0;
-    }
-  
-    .header ul {
-      margin-left: 12px;
-      margin-bottom: 20px;
-    }
-  
-    .name h1,
-    .name h2 {
-      font-size: 2rem;
-      line-height: 1.2;
-      margin-left: 10px;
-    }
-  
-    .objective p,
-    .about-me p {
-      font-size: 1rem;
-      margin-left: 30px;
-      margin-top: 0;
-      margin-bottom: -10px;
-    }
-  
-    .btn {
-      width: 50%;
-      padding: 0;
-      margin-left: 25px;
-      margin-top: 15px;
-    }
-  
-    .btn a {
-      font-size: 1rem;
-      padding: 4px;
-    }
-
-    .about-me h3,
-    .portfolio h3,
-    .contact h3,
-    .resume h3 {
-      margin-left: 25px;
-    }
-  
-    .about-me {
-      margin: 0;
-    }
-    
-    .about-me p {
-      width: 95%;
-    }
-  
-    .leftside {
-      position: fixed;
-      left: 8px;
-      top: 60%;
-      transform: translateY(-50%);
-      z-index: 100;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: auto;
-      width: auto;
-      margin-left: 0;
-    }
-  
-    .leftside ul {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .leftside li {
-      margin-bottom: 60px;
-    }
-  
-    .leftside a {
-      font-size: 1rem;
-      margin-left: -15px;
-    }
-  
-    .fa-brands,
-    .fab {
-      font-family: "Font Awesome 6 Brands";
-      font-weight: 400;
-    }
-  
-    .v1,
-    .v2 {
-      left: 3px;
-      margin-top: -30px;
-      height: 60px;
-    }
-    .v2 {
-      margin-top: 30px;
-    }
-    
-    .project-container {
-      grid-template-columns: 1fr;
-      padding: 0 10px;
-      width: 100%;
-    }
-    .project-image {
-      padding-bottom: 100%;
-    }
-  
-    .project-wrapper {
-      width: 50%;
-      margin-left: 180px;
-      margin-bottom: 160px;
-    }
-
-    .contact {
-      margin-top: -30px;
-    }
-
-    .contact a, .contact p{
-      font-size: 1.3rem;
-    }
-
-    .resume {
-      margin-top: -30px;
-    }
-
-    .resume a {
-      font-size: 1.3rem;
-    }
-
-    .footer {
-      margin-right: 25px;
-    }
+  .main-content {
+    margin-left: 0;
   }
-  
+
+  .header ul {
+    margin-left: 12px;
+    margin-bottom: 20px;
+  }
+
+  .name h1,
+  .name h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-left: 10px;
+  }
+
+  .objective p,
+  .about-me p {
+    font-size: 1rem;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: -10px;
+  }
+
+  .btn {
+    width: 50%;
+    padding: 0;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+
+  .btn a {
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  .about-me h3,
+  .portfolio h3,
+  .contact h3,
+  .resume h3 {
+    margin-left: 25px;
+  }
+
+  .about-me {
+    margin: 0;
+  }
+
+  .about-me p {
+    width: 95%;
+  }
+
+  .leftside {
+    position: fixed;
+    left: 8px;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .leftside ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftside li {
+    margin-bottom: 60px;
+  }
+
+  .leftside a {
+    font-size: 1rem;
+    margin-left: -15px;
+  }
+
+  .fa-brands,
+  .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+  }
+
+  .v1,
+  .v2 {
+    left: 3px;
+    margin-top: -30px;
+    height: 60px;
+  }
+  .v2 {
+    margin-top: 30px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .project-image {
+    padding-bottom: 100%;
+  }
+
+  .project-wrapper {
+    width: 50%;
+    margin-left: 180px;
+    margin-bottom: 160px;
+  }
+
+  .contact {
+    margin-top: -30px;
+  }
+
+  .contact a,
+  .contact p {
+    font-size: 1.3rem;
+  }
+
+  .resume {
+    margin-top: -30px;
+  }
+
+  .resume a {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    margin-right: 25px;
+  }
+
+  *::-webkit-scrollbar,
+  .header::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-thumb,
+  .header::-webkit-scrollbar-thumb {
+    background-color: var(--hl-link-color);
+    border-radius: 3px;
+  }
+}
+
 @media only screen and (min-width: 401px) and (max-width: 767px) {
   body {
     display: flex;
@@ -730,100 +762,87 @@ h3:after {
   .footer {
     padding: 0 20px;
     box-sizing: border-box;
-    width: 100%; /* Changed from 170% to 100% */
-    margin-right: 0; /* Removed negative margin */
+    width: 100%; 
+    margin-right: 0; 
   }
 
   .header {
-    width: 300%; /* Changed from 170% to 100% */
-    margin-left: 160px;
+    width: 300%;
+    margin-left: 40px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
   }
 
   .header ul {
     margin-left: 0;
-    width: 100%; /* Changed from auto to 100% */
+    width: 100%; 
     display: flex;
     justify-content: center;
   }
 
   .header a {
     color: var(--secondary-font-color);
-    margin: 0 5px; /* Reduced side margins */
-    font-size: 1rem; /* Slightly reduced font size */
-  }
-
-  .name,
-  .objective,
-  .about-me,
-  .portfolio,
-  .contact,
-  .resume,
-  .footer {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    text-align: center;
-    margin-right: 0;
+    margin: 0 5px; 
+    font-size: 1rem; 
   }
 
   .name {
-    width: 100%; /* Changed from calc(200% - 60px) to 100% */
-    max-width: 100%;
-    margin-left: 70px;
+    width: 300%;
+    max-width: 200%;
     text-align: center;
+    margin-left: -185px;
   }
 
   .name h1 {
-    font-size: 2.5rem; /* Reduced font size */
+    font-size: 2.2rem; 
   }
 
   .name h2 {
-    font-size: 1.8rem; /* Reduced font size */
+    font-size: 1.8rem;
   }
 
   .objective {
-    width: 137%;
+    width: 100%;
     max-width: 200%;
     margin: 0 auto;
   }
 
   .objective p {
-    font-size: 1.2rem;
-    max-width: 100%;
-    margin-left: 7px;
+    font-size: 1.4rem;
+    width: 105%;
+    max-width: 120%;
+    margin-left: 10px;
   }
 
   .btn {
     width: 130%;
-    margin-left: 0; /* Removed margin */
+    margin-left: 0; 
     display: flex;
     justify-content: center;
   }
 
   .btn a {
-    margin-left: 150px;
+    margin-left: 45px;
     width: auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 8px 16px;
-  }
-
-  .about-me h3 {
-    margin-left: 0;
-    font-size: 2.2rem; /* Slightly reduced font size */
   }
 
   .about-me p {
     width: 100%;
     margin-left: 0;
-    font-size: 1.8rem; /* Added font size */
+    font-size: 1.4rem; 
+  }
+
+  .about-me h3 {
+    margin-left: 50px;
   }
 
   .leftside {
     position: fixed;
-    top: 650px;
-    left: 10px;
+    top: 450px;
+    left: 5px;
     width: 40px;
     height: auto;
     margin: 0;
@@ -832,7 +851,7 @@ h3:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
   }
 
   .leftside ul {
@@ -840,18 +859,19 @@ h3:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin-bottom: 50px;
+    margin-left: -4px;
     height: 50px;
   }
 
   .leftside li {
-    margin-bottom: 45px; /* Space between icons */
+    margin-bottom: 25px; 
   }
 
   .leftside a {
-    font-size: 20px; /* Adjust icon size */
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
+    font-size: 20px; 
+    width: 40px; 
+    height: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -860,17 +880,17 @@ h3:after {
   .v1,
   .v2 {
     width: 1px;
-    height: 70px; /* Adjust line length */
+    height: 70px; 
     background-color: rgba(245, 245, 245, 0.5);
-    margin-left: -1px;
+    margin-left: 2px;
   }
 
   .v1 {
-    margin-bottom: 20px; /* Space above icons */
+    margin-bottom: 20px;
   }
 
   .v2 {
-    margin-top: 50px; /* Space below icons */
+    margin-top: 10px; 
   }
 
   .portfolio {
@@ -881,44 +901,58 @@ h3:after {
     grid-template-columns: 1fr;
     padding: 0 10px;
     width: 100%;
-    margin-left: 0; /* Removed margin */
+    margin-left: 0; 
     margin-top: 50px;
   }
 
   .portfolio h3 {
     text-align: center;
     margin-bottom: 50px;
-    margin-left: 0; /* Removed margin */
-    font-size: 2.2rem; /* Slightly reduced font size */
+    margin-left: 70px; 
   }
 
   .project-description p,
   .project-description-2 p,
   .project-description-3 p,
   .project-description-4 p {
-    font-size: 1.3rem; /* Reduced font size */
+    font-size: 1.3rem;
     line-height: 1.3;
     width: 100%;
     height: 200px;
   }
 
-  .contact h3,
-  .resume h3 {
-    font-size: 2.2rem; /* Slightly reduced font size */
-  }
-
   .contact p {
-    font-size: 1.8rem; /* Reduced font size */
+    font-size: 1.8rem;
   }
 
   .footer h4 {
     width: 100%;
     margin-left: 0;
-    font-size: 1.8rem; /* Reduced font size */
+    font-size: 1.8rem; 
+  }
+
+  .header {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header::-webkit-scrollbar {
+    height: 6px;
+    display: block;
+  }
+
+  .header::-webkit-scrollbar-track {
+    background: var(--main-bg-color);
+  }
+
+  .header::-webkit-scrollbar-thumb {
+    background-color: var(--hl-link-color);
+    border-radius: 3px;
   }
 }
 
-/* Tablet layout */
+/* Media query: tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .project-container {
     display: flex;
@@ -931,7 +965,6 @@ h3:after {
     margin: 0 1% 40px 1%;
   }
 
-  /* Step 1: Adjust the project container */
   .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -943,18 +976,18 @@ h3:after {
   }
 
   .project-image {
-    padding-bottom: 75%; /* 4:3 aspect ratio */
+    padding-bottom: 75%;
   }
 
   .project-description,
   .project-description-2,
   .project-description-3,
   .project-description-4 {
-    bottom: -40px; /* Adjust position */
+    bottom: -40px;
   }
 }
 
-/* Media query for 1024px and above (Desktop) */
+/* Media query: desktop devices */
 @media only screen and (min-width: 1024px) {
   .project-container {
     display: flex;
@@ -968,17 +1001,39 @@ h3:after {
   }
 
   .project-wrapper:nth-child(2n) {
-    margin-right: 0; /* Remove right margin for every second item */
+    margin-right: 0;
   }
 
   .project-description,
   .project-description-2,
   .project-description-3,
   .project-description-4 {
-    bottom: -30px; /* Further adjust position for larger screens */
+    bottom: -30px; 
   }
 }
 @media only screen and (min-width: 1200px) {
+  .header {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .header a {
+    font-size: 1.7rem;
+    padding: 10px 70px;
+  }
+
+  .name {
+    margin-top: 100px;
+  }
+
+  .objective p {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+  }
+
   .project-container {
     max-width: 100%;
     margin: 0 auto;
