@@ -72,6 +72,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 main {
@@ -108,6 +109,7 @@ main {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: var(--secondary-font-color) var(--main-bg-color);
+  min-width: 600px;
 }
 
 .header::-webkit-scrollbar {
@@ -263,13 +265,13 @@ section {
 .leftside ul {
   font-size: 30px;
   padding: 5px;
-  margin: 0px; 
+  margin: 0px;
   color: var(--hl-link-color);
   font-size: 30px;
   padding: 5px;
   margin: 0;
   border-radius: 50%;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .leftside ul li {
@@ -313,7 +315,6 @@ section {
   align-items: center;
   background-color: transparent;
 }
-
 
 .leftside {
   background-color: transparent;
@@ -441,12 +442,12 @@ h3:after {
 }
 
 .project-container > * {
-  margin: 20px; 
+  margin: 20px;
 }
 
 /* Individual project styles */
 .project-wrapper {
-  width: 100%; 
+  width: 100%;
   margin-bottom: 40px; /* Space between projects */
   position: relative;
 }
@@ -454,7 +455,7 @@ h3:after {
 .project-image {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; 
+  padding-bottom: 75%;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -590,9 +591,16 @@ h3:after {
     margin-left: 0;
   }
 
+  .header {
+    width: 100%;
+    overflow-x: auto;
+  }
+
   .header ul {
     margin-left: 12px;
     margin-bottom: 20px;
+    display: inline-flex;
+    white-space: nowrap;
   }
 
   .name h1,
@@ -739,6 +747,7 @@ h3:after {
     margin: 0;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
   }
 
   main {
@@ -762,8 +771,8 @@ h3:after {
   .footer {
     padding: 0 20px;
     box-sizing: border-box;
-    width: 100%; 
-    margin-right: 0; 
+    width: 100%;
+    margin-right: 0;
   }
 
   .header {
@@ -776,15 +785,16 @@ h3:after {
 
   .header ul {
     margin-left: 0;
-    width: 100%; 
-    display: flex;
+    width: 100%;
+    display: inline-flex;
+    white-space: nowrap;
     justify-content: center;
   }
 
   .header a {
     color: var(--secondary-font-color);
-    margin: 0 5px; 
-    font-size: 1rem; 
+    margin: 0 5px;
+    font-size: 1rem;
   }
 
   .name {
@@ -795,7 +805,7 @@ h3:after {
   }
 
   .name h1 {
-    font-size: 2.2rem; 
+    font-size: 2.2rem;
   }
 
   .name h2 {
@@ -817,7 +827,7 @@ h3:after {
 
   .btn {
     width: 130%;
-    margin-left: 0; 
+    margin-left: 0;
     display: flex;
     justify-content: center;
   }
@@ -830,9 +840,10 @@ h3:after {
   }
 
   .about-me p {
-    width: 100%;
-    margin-left: 0;
-    font-size: 1.4rem; 
+    width: 110%;
+    margin-left: 45px;
+    margin-top: 10px;
+    font-size: 1.4rem;
   }
 
   .about-me h3 {
@@ -851,7 +862,7 @@ h3:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
+    height: 100vh;
   }
 
   .leftside ul {
@@ -865,13 +876,13 @@ h3:after {
   }
 
   .leftside li {
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
   }
 
   .leftside a {
-    font-size: 20px; 
-    width: 40px; 
-    height: 40px; 
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -880,7 +891,7 @@ h3:after {
   .v1,
   .v2 {
     width: 1px;
-    height: 70px; 
+    height: 70px;
     background-color: rgba(245, 245, 245, 0.5);
     margin-left: 2px;
   }
@@ -890,45 +901,60 @@ h3:after {
   }
 
   .v2 {
-    margin-top: 10px; 
+    margin-top: 10px;
   }
 
   .portfolio {
     padding: 50px 20px;
   }
 
+  .portfolio h3, .contact h3, .resume h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -120px;
+    margin-left: 70px;
+  }
+
   .project-container {
     grid-template-columns: 1fr;
     padding: 0 10px;
-    width: 100%;
-    margin-left: 0; 
-    margin-top: 50px;
+    width: 60%;
+    margin-left: 170px;
+    margin-top: 20px;
   }
 
-  .portfolio h3 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-left: 70px; 
+  .project-wrapper {
+    margin-bottom: 200px;
+  }
+
+  .project-description, .project-description-2, .project-description-3, .project-description-4 {
+    height: 40%;
   }
 
   .project-description p,
   .project-description-2 p,
   .project-description-3 p,
   .project-description-4 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.3;
     width: 100%;
-    height: 200px;
+    height: 40px;
   }
 
-  .contact p {
-    font-size: 1.8rem;
-  }
+  .contact a, .contact p, .resume a {
+    font-size: 1.3rem;
+    margin-left: 70px;
+    margin-top: -15px;
+}
+
+.contact p {
+  margin-bottom: 120px;
+}
 
   .footer h4 {
-    width: 100%;
-    margin-left: 0;
-    font-size: 1.8rem; 
+    width: 150%;
+    margin-left: 20px;
+    font-size: 1.3rem;
   }
 
   .header {
@@ -954,6 +980,10 @@ h3:after {
 
 /* Media query: tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    overflow-x: auto;
+  }
+
   .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -989,6 +1019,10 @@ h3:after {
 
 /* Media query: desktop devices */
 @media only screen and (min-width: 1024px) {
+  .header {
+    overflow-x: auto;
+  }
+  
   .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -1008,7 +1042,7 @@ h3:after {
   .project-description-2,
   .project-description-3,
   .project-description-4 {
-    bottom: -30px; 
+    bottom: -30px;
   }
 }
 @media only screen and (min-width: 1200px) {
