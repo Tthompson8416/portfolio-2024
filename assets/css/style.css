@@ -597,15 +597,21 @@ h3:after {
   }
 
   .header ul {
-    margin-left: 12px;
-    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
     display: inline-flex;
     white-space: nowrap;
+    width: 80%;
+  }
+
+  .header a {
+    font-size: 0.8rem;
+    padding: 5px;
   }
 
   .name h1,
   .name h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 1.2;
     margin-left: 10px;
   }
@@ -776,8 +782,8 @@ h3:after {
   }
 
   .header {
-    width: 300%;
-    margin-left: 40px;
+    width: 100%;
+    margin-left: 10px;
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -794,35 +800,44 @@ h3:after {
   .header a {
     color: var(--secondary-font-color);
     margin: 0 5px;
-    font-size: 1rem;
+    font-size: .9rem;
+    padding: 5px;
   }
 
   .name {
-    width: 300%;
-    max-width: 200%;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
-    margin-left: -185px;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .name h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    width: 100%;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
   }
 
   .name h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    width: 100%;
   }
 
   .objective {
     width: 100%;
-    max-width: 200%;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .objective p {
     font-size: 1.4rem;
-    width: 105%;
-    max-width: 120%;
-    margin-left: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 20px;
   }
 
   .btn {
@@ -908,7 +923,9 @@ h3:after {
     padding: 50px 20px;
   }
 
-  .portfolio h3, .contact h3, .resume h3 {
+  .portfolio h3,
+  .contact h3,
+  .resume h3 {
     text-align: center;
     margin-bottom: 50px;
     margin-top: -120px;
@@ -927,7 +944,10 @@ h3:after {
     margin-bottom: 200px;
   }
 
-  .project-description, .project-description-2, .project-description-3, .project-description-4 {
+  .project-description,
+  .project-description-2,
+  .project-description-3,
+  .project-description-4 {
     height: 40%;
   }
 
@@ -941,15 +961,17 @@ h3:after {
     height: 40px;
   }
 
-  .contact a, .contact p, .resume a {
+  .contact a,
+  .contact p,
+  .resume a {
     font-size: 1.3rem;
     margin-left: 70px;
     margin-top: -15px;
-}
+  }
 
-.contact p {
-  margin-bottom: 120px;
-}
+  .contact p {
+    margin-bottom: 120px;
+  }
 
   .footer h4 {
     width: 150%;
@@ -984,15 +1006,90 @@ h3:after {
     overflow-x: auto;
   }
 
-  .project-container {
+  .header a {
+    font-size: 1.4rem;
+    padding: 3px 20px;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .name h1,
+  .name h2 {
+    font-size: 2.7rem;
+  }
+
+  .leftside {
+    position: fixed; /* Keep it fixed */
+    left: 10px;
+    top: 50%; /* Position it at the middle of the viewport */
+    transform: translateY(-50%); /* Center it vertically */
+    z-index: 100;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: auto; /* Let the content determine the height */
+  }
+
+  .leftside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .leftside li {
+    margin-bottom: 40px;
+  }
+
+  .leftside li:last-child {
+    margin-bottom: 0; /* Remove margin from last item */
+  }
+
+  .leftside a {
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 
-  .project-wrapper {
-    width: 48%;
-    margin: 0 1% 40px 1%;
+  .v1,
+  .v2 {
+    position: absolute;
+    left: 22%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 60px; /* Adjust height as needed */
+    background-color: rgba(245, 245, 245, 0.5);
+  }
+
+  .v1 {
+    top: 35px; /* Position above the icons */
+  }
+
+  .v2 {
+    top: 145px; /* Position below the icons */
+  }
+
+  .objective p,
+  .about-me p {
+    width: 100%;
+    margin-left: 30px;
+    font-size: 1.9rem;
+    margin-top: 30px;
+  }
+
+  .btn a {
+    margin-left: 55px;
+  }
+
+  .about-me h3,
+  .portfolio h3 {
+    margin-left: 30px;
   }
 
   .project-container {
@@ -1001,12 +1098,18 @@ h3:after {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px 5px auto 50px;
     padding: 0 20px;
+  }
+
+  .project-wrapper {
+    width: 46%;
+    margin: 0 1% 130px 1%;
   }
 
   .project-image {
     padding-bottom: 75%;
+    margin-left: 10px;
   }
 
   .project-description,
@@ -1014,6 +1117,32 @@ h3:after {
   .project-description-3,
   .project-description-4 {
     bottom: -40px;
+    left: 20px;
+    height: 85px;
+  }
+
+  .project-description p,
+  .project-description-2 p{
+   line-height: 1.8;
+   margin-bottom: -15px;
+  }
+
+  .project-description-3 p,
+  .project-description-4 p {
+    line-height: 1;
+    margin-bottom: -10px;
+  }
+
+  .contact, .resume {
+    margin-top: 10px;
+  }
+
+  .resume a {
+    margin-left: 30px;
+  }
+
+  .footer h4 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1022,7 +1151,7 @@ h3:after {
   .header {
     overflow-x: auto;
   }
-  
+
   .project-container {
     display: flex;
     flex-wrap: wrap;
