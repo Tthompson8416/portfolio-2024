@@ -18,7 +18,7 @@
   outline: none;
 }
 
-* Scrollbar styles */ * {
+* {
   scrollbar-width: thin;
   scrollbar-color: var(--secondary-font-color) var(--main-bg-color);
 }
@@ -33,7 +33,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--hl-link-color);
+  background-color: var(--secondary-font-color);
   border-radius: 3px;
 }
 
@@ -57,7 +57,7 @@ html {
 }
 
 .header::-webkit-scrollbar-thumb {
-  background-color: var(--hl-link-color);
+  background-color: var(--secondary-font-color);
   border-radius: 3px;
 }
 
@@ -122,7 +122,7 @@ main {
 }
 
 .header::-webkit-scrollbar-thumb {
-  background-color: var(--hl-link-color);
+  background-color: var(--secondary-font-color);
   border-radius: 3px;
 }
 
@@ -385,7 +385,7 @@ h3:after {
   margin-right: -50%;
 }
 
-/* About Me Section */
+/* About me section */
 .about-me {
   color: var(--main-font-color);
   font-family: var(--main-font);
@@ -445,10 +445,9 @@ h3:after {
   margin: 20px;
 }
 
-/* Individual project styles */
 .project-wrapper {
   width: 100%;
-  margin-bottom: 40px; /* Space between projects */
+  margin-bottom: 40px; 
   position: relative;
 }
 
@@ -585,7 +584,7 @@ h3:after {
   color: var(--secondary-font-color);
 }
 
-/* Media query: mobile devices */
+/* Media queries for mobile devices */
 @media only screen and (max-width: 400px) {
   .main-content {
     margin-left: 0;
@@ -731,15 +730,13 @@ h3:after {
     margin-right: 25px;
   }
 
-  *::-webkit-scrollbar,
   .header::-webkit-scrollbar {
     width: 10px;
     height: 6px;
   }
 
-  *::-webkit-scrollbar-thumb,
   .header::-webkit-scrollbar-thumb {
-    background-color: var(--hl-link-color);
+    background-color: var(--secondary-font-color);
     border-radius: 3px;
   }
 }
@@ -754,6 +751,7 @@ h3:after {
     width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: var(--main-bg-color);
   }
 
   main {
@@ -815,9 +813,9 @@ h3:after {
   .name h1 {
     font-size: 2rem;
     width: 100%;
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
   }
 
   .name h2 {
@@ -989,17 +987,9 @@ h3:after {
     height: 6px;
     display: block;
   }
-
-  .header::-webkit-scrollbar-track {
-    background: var(--main-bg-color);
-  }
-
-  .header::-webkit-scrollbar-thumb {
-    background-color: var(--hl-link-color);
-    border-radius: 3px;
-  }
 }
 
+/* Media queries for tablets */
  @media (min-width: 845px) and (max-width: 1023px) {
   .contact,
   .resume {
@@ -1008,7 +998,6 @@ h3:after {
   }
 }
 
-/* Media query: tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
     overflow-x: auto;
@@ -1029,23 +1018,23 @@ h3:after {
   }
 
   .leftside {
-    position: fixed; /* Keep it fixed */
+    position: fixed; 
     left: 10px;
-    top: 50%; /* Position it at the middle of the viewport */
-    transform: translateY(-50%); /* Center it vertically */
+    top: 50%; 
+    transform: translateY(-50%); 
     z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: auto; /* Let the content determine the height */
+    height: auto; 
   }
 
   .leftside ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    padding: 0; 
+    margin: 0; 
   }
 
   .leftside li {
@@ -1053,7 +1042,7 @@ h3:after {
   }
 
   .leftside li:last-child {
-    margin-bottom: 0; /* Remove margin from last item */
+    margin-bottom: 0; 
   }
 
   .leftside a {
@@ -1071,16 +1060,16 @@ h3:after {
     left: 22%;
     transform: translateX(-50%);
     width: 1px;
-    height: 60px; /* Adjust height as needed */
+    height: 60px; 
     background-color: rgba(245, 245, 245, 0.5);
   }
 
   .v1 {
-    top: 35px; /* Position above the icons */
+    top: 35px;
   }
 
   .v2 {
-    top: 145px; /* Position below the icons */
+    top: 145px; 
   }
 
   .objective p,
@@ -1154,7 +1143,7 @@ h3:after {
   }
 }
 
-/* Media query: desktop devices */
+/* Media queries for desktops */
 @media only screen and (min-width: 1024px) {
   .header {
     overflow-x: auto;
@@ -1190,23 +1179,23 @@ h3:after {
   }
 
   .leftside {
-      position: fixed; /* Keep it fixed */
+      position: fixed; 
       left: 10px;
-      top: 50%; /* Position it at the middle of the viewport */
-      transform: translateY(-50%); /* Center it vertically */
+      top: 50%; 
+      transform: translateY(-50%); 
       z-index: 100;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: auto; /* Let the content determine the height */
+      height: auto; 
     }
   
     .leftside ul {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
+      padding: 0; 
+      margin: 0;
     }
 
     .leftside li {
@@ -1214,7 +1203,7 @@ h3:after {
     }
   
     .leftside li:last-child {
-      margin-bottom: 0; /* Remove margin from last item */
+      margin-bottom: 0; 
     }
   
     .leftside a {
@@ -1232,16 +1221,16 @@ h3:after {
       left: 22%;
       transform: translateX(-50%);
       width: 1px;
-      height: 60px; /* Adjust height as needed */
+      height: 60px; 
       background-color: rgba(245, 245, 245, 0.5);
     }
   
     .v1 {
-      top: 35px; /* Position above the icons */
+      top: 35px; 
     }
   
     .v2 {
-      top: 145px; /* Position below the icons */
+      top: 145px; 
     }
 
     .about-me h3, .portfolio h3 {
@@ -1297,6 +1286,7 @@ h3:after {
   
 }
 
+/* Media queries for larger screens */
 @media only screen and (min-width: 1200px) {
   .header {
     width: 100%;
@@ -1305,7 +1295,7 @@ h3:after {
 
   .header a {
     font-size: 1.7rem;
-    padding: 10px 70px;
+    padding: 10px 40px;
   }
 
   .name {
@@ -1337,6 +1327,7 @@ h3:after {
   }
 }
 
+/* Media queries for specific pixel ranges */
 @media only screen and (min-width: 1150px) {
   body {
     background-color: var(--main-bg-color);
