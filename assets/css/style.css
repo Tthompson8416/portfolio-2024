@@ -42,25 +42,6 @@ html {
   overflow-y: scroll;
 }
 
-.header {
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.header::-webkit-scrollbar {
-  height: 6px;
-}
-
-.header::-webkit-scrollbar-track {
-  background: var(--main-bg-color);
-}
-
-.header::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-font-color);
-  border-radius: 3px;
-}
-
 html,
 body {
   width: 100%;
@@ -72,7 +53,6 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 main {
@@ -99,43 +79,23 @@ main {
 
 /* Header */
 .header {
-  width: 100%;
   padding: 7px 0;
-  display: flex;
   justify-content: center;
   overflow-x: auto;
   border-bottom: none;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: var(--secondary-font-color) var(--main-bg-color);
   min-width: 600px;
-}
-
-.header::-webkit-scrollbar {
-  height: 6px;
-  display: block;
-}
-
-.header::-webkit-scrollbar-track {
-  background: var(--main-bg-color);
-}
-
-.header::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-font-color);
-  border-radius: 3px;
 }
 
 .header ul {
   display: inline-flex;
-  padding-bottom: 10px;
+  padding: 0;
+  margin: 20px 0 0;
   justify-content: center;
   font-family: var(--font-robo);
-  margin-top: 20px;
   flex-wrap: nowrap;
   white-space: nowrap;
-  padding: 0;
-  margin: 0;
   width: auto;
 }
 
@@ -143,11 +103,6 @@ main {
   display: inline-block;
   padding: 25px 10px 0;
   white-space: nowrap;
-}
-
-.header div ul li {
-  display: inline-block;
-  padding: 25px 10px 0;
 }
 
 .header a {
@@ -261,17 +216,14 @@ section {
   line-height: 0.5;
   background-color: transparent;
 }
-
 .leftside ul {
   font-size: 30px;
   padding: 5px;
-  margin: 0px;
-  color: var(--hl-link-color);
-  font-size: 30px;
-  padding: 5px;
   margin: 0;
+  color: var(--hl-link-color);
   border-radius: 50%;
   display: inline-block;
+  background-color: transparent;
 }
 
 .leftside ul li {
