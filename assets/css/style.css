@@ -577,8 +577,12 @@ h3:after {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Media queries for mobile devices */
@@ -735,6 +739,22 @@ h3:after {
   .header::-webkit-scrollbar-thumb {
     background-color: var(--secondary-font-color);
     border-radius: 3px;
+  }
+
+  .scroll-to-top {
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .scroll-to-top svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .scroll-to-top span {
+    display: none;
   }
 }
 
@@ -986,13 +1006,24 @@ h3:after {
   }
 
   .scroll-to-top {
+    bottom: 15px;
+    right: 15px;
     padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .scroll-to-top svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .scroll-to-top span {
     font-size: 12px;
   }
 }
 
 /* Media queries for tablets */
-@media (min-width: 845px) and (max-width: 1023px) {
+@media only screen and (min-width: 845px) and (max-width: 1023px) {
   .contact,
   .resume {
     text-align: left;
