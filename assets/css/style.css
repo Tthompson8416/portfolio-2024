@@ -509,13 +509,13 @@ h3:after {
   margin: 20px 0;
   font-size: 2rem;
   font-family: var(--font-robo);
-  color: var(--main-font-color);
+  color: var(--hl-link-color)
 }
 
 .contact p {
   font-size: 2.5rem;
   font-family: var(--font-robo);
-  color: var(--main-font-color);
+  color: var(--hl-link-color);
 }
 
 .resume {
