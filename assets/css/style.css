@@ -772,6 +772,14 @@ h3:after {
   .scroll-to-top span {
     display: none;
   }
+  
+  .project-title,
+  .project-title-2,
+  .project-title-3,
+  .project-title-4,
+  .project-title-5 {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 767px) {
@@ -1159,6 +1167,15 @@ h3:after {
     padding-bottom: 75%;
     margin-left: 10px;
   }
+
+  .project-title,
+  .project-title-2,
+  .project-title-3,
+  .project-title-4,
+  .project-title-5 {
+    font-size: 1.3rem;
+  }
+
 
   .project-description,
   .project-description-2,
