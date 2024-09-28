@@ -416,7 +416,8 @@ h3:after {
 .project-title,
 .project-title-2,
 .project-title-3,
-.project-title-4 {
+.project-title-4,
+.project-title-5 {
   position: absolute;
   top: -40px;
   left: -2px;
@@ -432,7 +433,8 @@ h3:after {
 .project-description,
 .project-description-2,
 .project-description-3,
-.project-description-4 {
+.project-description-4, 
+.project-description-5 {
   position: absolute;
   bottom: -60px;
   left: 0;
@@ -453,7 +455,8 @@ h3:after {
 .project-description p,
 .project-description-2 p,
 .project-description-3 p,
-.project-description-4 p {
+.project-description-4 p,
+.project-description-5 p {
   color: var(--main-font-color);
   font-size: 1rem;
   background-color: transparent;
@@ -476,6 +479,10 @@ h3:after {
   background-image: url("../images/Battle-bots-tinted.jpg");
 }
 
+.project-5 {
+  background-image: url("../images/password-generator-tinted.jpg");
+}
+
 /* Hover effects for project images */
 .project-1:hover {
   background-image: url("../images/hero-bg.jpg");
@@ -488,6 +495,10 @@ h3:after {
 }
 .project-4:hover {
   background-image: url("../images/robot-standing-in-dark.jpg");
+}
+
+.project-5:hover {
+  background-image: url("../images/password-security-checklist-in-notebook.jpg");
 }
 
 .project-wrapper:hover .project-image {
@@ -967,14 +978,16 @@ h3:after {
   .project-description,
   .project-description-2,
   .project-description-3,
-  .project-description-4 {
+  .project-description-4,
+  .project-description-5 {
     height: 40%;
   }
 
   .project-description p,
   .project-description-2 p,
   .project-description-3 p,
-  .project-description-4 p {
+  .project-description-4 p,
+  .project-description-5 p {
     font-size: 1.2rem;
     line-height: 1.3;
     width: 100%;
@@ -1150,7 +1163,8 @@ h3:after {
   .project-description,
   .project-description-2,
   .project-description-3,
-  .project-description-4 {
+  .project-description-4,
+  .project-description-5 {
     bottom: -40px;
     left: 20px;
     height: 85px;
@@ -1163,7 +1177,8 @@ h3:after {
   }
 
   .project-description-3 p,
-  .project-description-4 p {
+  .project-description-4 p,
+  .project-description-5 p {
     line-height: 1;
     margin-bottom: -10px;
   }
@@ -1301,14 +1316,16 @@ h3:after {
   .project-description,
   .project-description-2,
   .project-description-3,
-  .project-description-4 {
+  .project-description-4,
+  .project-description-5 {
     bottom: -50px;
   }
 
   .project-description p,
   .project-description-2 p,
   .project-description-3 p,
-  .project-description-4 p {
+  .project-description-4 p,
+  .project-description-5 p {
     font-size: 1.3rem;
   }
 
@@ -1363,7 +1380,8 @@ h3:after {
   .project-description p,
   .project-description-2 p,
   .project-description-3 p,
-  .project-description-4 p {
+  .project-description-4 p,
+  .project-description-5 p {
     padding-bottom: 20px;
   }
 
