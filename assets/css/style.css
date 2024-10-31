@@ -1420,10 +1420,19 @@ h3:after {
     padding-bottom: 20px;
   }
 
+  #contact {
+    margin-right: 230px;
+  }
+
+  #resume {
+    margin-right: 220px;
+  }
+
   .footer h4 {
-    margin-left: 150px;
+    margin-left: 85px;
   }
 }
+  
 
 /* Media queries for specific pixel ranges */
 @media only screen and (min-width: 1150px) {
@@ -1431,3 +1440,16 @@ h3:after {
     background-color: var(--main-bg-color);
   }
 }
+
+#contact {
+  margin-right: 230px;
+}
+
+#resume {
+  margin-right: 220px;
+}
+
+.footer h4 {
+  margin-left: 85px;
+}
+
