@@ -739,6 +739,7 @@ h3:after {
 
   .contact {
     margin-top: -30px;
+    margin-left: 260px;
   }
 
   .contact a,
@@ -748,14 +749,11 @@ h3:after {
 
   .resume {
     margin-top: -30px;
+    margin-left: 250px;
   }
 
   .resume a {
     font-size: 1.3rem;
-  }
-
-  .footer {
-    margin-right: 25px;
   }
 
   .header::-webkit-scrollbar {
@@ -788,8 +786,14 @@ h3:after {
   .project-title-2,
   .project-title-3,
   .project-title-4,
-  .project-title-5 {
+  .project-title-5,
+  .project-title-6 {
     font-size: 1.3rem;
+  }
+
+  .footer h4 {
+    margin-right: 95px;
+    width: 100%;
   }
 }
 
@@ -1015,6 +1019,10 @@ h3:after {
     height: 40px;
   }
 
+  .contact, .resume {
+    margin-left: 215px;
+  }
+
   .contact a,
   .contact p,
   .resume a {
@@ -1027,9 +1035,9 @@ h3:after {
     margin-bottom: 120px;
   }
 
-  .footer h4 {
-    width: 150%;
-    margin-left: 20px;
+  .footer {
+    width: 140%;
+    margin-right: 80px;
     font-size: 1.3rem;
   }
 
@@ -1221,16 +1229,18 @@ h3:after {
   }
 
   .resume a {
-    margin-left: 30px;
+    margin-left: 40px;
+    font-size: 1.7rem;
   }
 
   .footer h4 {
     font-size: 1.5rem;
+    margin-right: 120px;
   }
 }
 
 /* Media queries for desktops */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023px) {
   .header {
     overflow-x: auto;
     width: 100%;
@@ -1378,7 +1388,8 @@ h3:after {
   }
 
   .footer h4 {
-    font-size: 2rem;
+    margin-right: 125px;
+    font-size: 1.5rem;
   }
 }
 
