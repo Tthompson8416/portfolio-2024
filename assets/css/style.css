@@ -418,7 +418,8 @@ h3:after {
 .project-title-3,
 .project-title-4,
 .project-title-5,
-.project-title-6 {
+.project-title-6,
+.project-title-7 {
   position: absolute;
   top: -40px;
   left: -2px;
@@ -436,7 +437,8 @@ h3:after {
 .project-description-3,
 .project-description-4, 
 .project-description-5,
-.project-description-6 {
+.project-description-6,
+.project-description-7 {
   position: absolute;
   bottom: -60px;
   left: 0;
@@ -459,7 +461,8 @@ h3:after {
 .project-description-3 p,
 .project-description-4 p,
 .project-description-5 p,
-.project-description-6 p {
+.project-description-6 p,
+.project-description-7 p {
   color: var(--main-font-color);
   font-size: 1rem;
   background-color: transparent;
@@ -490,6 +493,10 @@ h3:after {
   background-image: url("../images/Weather\ Dashboard-Tinted.jpg");
 }
 
+.project-7 {
+  background-image: url("../images/taskinator-tinted.jpg");
+}
+
 /* Hover effects for project images */
 .project-1:hover {
   background-image: url("../images/hero-bg.jpg");
@@ -503,13 +510,14 @@ h3:after {
 .project-4:hover {
   background-image: url("../images/robot-standing-in-dark.jpg");
 }
-
 .project-5:hover {
   background-image: url("../images/password-security-checklist-in-notebook.jpg");
 }
-
 .project-6:hover {
   background-image: url("../images/Weather\ Dashboard.jpg");
+}
+.project-7:hover {
+  background-image: url("../images/taskinator.jpg");
 }
 
 .project-wrapper:hover .project-image {
@@ -787,7 +795,8 @@ h3:after {
   .project-title-3,
   .project-title-4,
   .project-title-5,
-  .project-title-6 {
+  .project-title-6,
+  .project-title-7 {
     font-size: 1.3rem;
   }
 
@@ -1003,7 +1012,8 @@ h3:after {
   .project-description-3,
   .project-description-4,
   .project-description-5,
-  .project-description-6 {
+  .project-description-6,
+  .project-description-7 {
     height: 40%;
   }
 
@@ -1012,7 +1022,8 @@ h3:after {
   .project-description-3 p,
   .project-description-4 p,
   .project-description-5 p,
-  .project-description-6 p {
+  .project-description-6 p,
+  .project-description-7 p {
     font-size: 1.2rem;
     line-height: 1.3;
     width: 100%;
@@ -1193,7 +1204,9 @@ h3:after {
   .project-title-2,
   .project-title-3,
   .project-title-4,
-  .project-title-5 {
+  .project-title-5,
+  .project-title-6,
+  .project-title-7 {
     font-size: 1.3rem;
   }
 
@@ -1203,7 +1216,8 @@ h3:after {
   .project-description-3,
   .project-description-4,
   .project-description-5,
-  .project-description-6 {
+  .project-description-6,
+  .project-description-7 {
     bottom: -40px;
     left: 20px;
     height: 85px;
@@ -1218,7 +1232,8 @@ h3:after {
   .project-description-3 p,
   .project-description-4 p,
   .project-description-5 p,
-  .project-description-6 p {
+  .project-description-6,
+  .project-description-7 {
     line-height: 1;
     margin-bottom: -10px;
   }
@@ -1360,7 +1375,8 @@ h3:after {
   .project-description-3,
   .project-description-4,
   .project-description-5,
-  .project-description-6 {
+  .project-description-6,
+  .project-description-7 {
     bottom: -50px;
   }
 
@@ -1369,7 +1385,8 @@ h3:after {
   .project-description-3 p,
   .project-description-4 p,
   .project-description-5 p,
-  .project-description-6 p {
+  .project-description-6 p,
+  .project-description-7 p {
     font-size: 1.3rem;
   }
 
@@ -1427,8 +1444,9 @@ h3:after {
   .project-description-3 p,
   .project-description-4 p,
   .project-description-5 p,
-  .project-description-6 {
-    padding-bottom: 20px;
+  .project-description-6 p,
+  .project-description-7 p {
+    padding-bottom: 15px;
   }
 
   #contact {
