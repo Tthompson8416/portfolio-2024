@@ -474,22 +474,25 @@ h3:after {
 
 
 /* Hover effects for project images */
-.project-wrapper {
-  --hover-image: '';
-  
-  &[data-project="1"] { --hover-image: url("../images/hero-bg.jpg"); }
-  &[data-project="2"] { --hover-image: url("../images/taskinator.jpg"); }
-  &[data-project="3"] { --hover-image: url("../images/kitchen-ready-for-cooking.jpg"); }
-  &[data-project="4"] { --hover-image: url("../images/robot-standing-in-dark.jpg"); }
-  &[data-project="5"] { --hover-image: url("../images/password-security-checklist-in-notebook.jpg"); }
-  &[data-project="6"] { --hover-image: url("../images/Weather\ Dashboard.jpg"); }
-  /* ... more project definitions */
-  
-  &:hover .project-image {
-    background-image: var(--hover-image);
-    transform: scale(1.1);
-  }
+.project-1:hover {
+  background-image: url("../images/hero-bg.jpg");
 }
+.project-2:hover {
+  background-image: url("../images/taskinator.jpg");
+}
+.project-3:hover {
+  background-image: url("../images/kitchen-ready-for-cooking.jpg");
+}
+.project-4:hover {
+  background-image: url("../images/robot-standing-in-dark.jpg");
+}
+.project-5:hover {
+  background-image: url("../images/password-security-checklist-in-notebook.jpg");
+}
+.project-6:hover {
+  background-image: url("../images/Weather\ Dashboard.jpg");
+}
+
 
 .project-wrapper:hover .project-image {
   transform: scale(1.1);
