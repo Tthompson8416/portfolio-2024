@@ -793,9 +793,10 @@ h3:after {
   }
 
   .footer h4 {
-    margin-right: 95px;
+    margin-right: 150px;
     width: 100%;
-  }
+    font-size: 1.1rem;
+}
 }
 
 @media only screen and (min-width: 401px) and (max-width: 767px) {
@@ -1036,10 +1037,10 @@ h3:after {
     margin-bottom: 120px;
   }
 
-  .footer {
-    width: 140%;
-    margin-right: 80px;
-    font-size: 1.3rem;
+  .footer h4 {
+    width: 100%;
+    margin-right: 140px;
+    font-size: 1.2rem;
   }
 
   .header {
@@ -1079,7 +1080,7 @@ h3:after {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
   .header {
     overflow-x: auto;
   }
@@ -1232,14 +1233,14 @@ h3:after {
     margin-top: 10px;
   }
 
-  .resume a {
+  .contact a, .contact p, .resume a {
     margin-left: 40px;
     font-size: 1.7rem;
   }
 
   .footer h4 {
-    font-size: 1.5rem;
-    margin-right: 120px;
+    font-size: 1.3rem;
+    margin-right: 170px;
   }
 }
 
@@ -1382,23 +1383,18 @@ h3:after {
     margin-top: -5px;
   }
 
-  .contact h3,
-  .resume h3 {
-    font-size: 2rem;
+  .contact, .resume {
     margin-left: 200px;
   }
 
-  .contact a,
-  .contact p,
-  .resume a {
-    font-size: 2.5rem;
-    margin-left: 200px;
-    width: 100%;
+  .contact a, .contact p, .resume a {
+    margin-left: 40px;
+    font-size: 1.7rem;
   }
 
   .footer h4 {
-    margin-right: 125px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-right: 170px;
   }
 }
 
