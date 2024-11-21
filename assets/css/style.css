@@ -169,11 +169,14 @@ section {
   width: 100%;
 }
 
-.objective p {
+.objective p,
+.about-me p,
+.portfolio-wrapper p {
   color: var(--main-font-color);
   font-family: var(--main-font);
   font-size: 22px;
   text-align: center;
+  margin-bottom: -20px;
 }
 
 .name,
@@ -319,8 +322,7 @@ h3:after {
 }
 
 /* About me section */
-.about-me,
-.portfolio-wrapper p {
+.about-me {
   color: var(--main-font-color);
   font-family: var(--main-font);
   max-width: 80%;
@@ -333,7 +335,8 @@ h3:after {
 }
 
 .about-me p,
-.portfolio-wrapper p {
+.portfolio-wrapper p,
+.objective p {
   font-size: 2rem;
   margin-top: 50px;
 }
@@ -783,10 +786,9 @@ h3:after {
   .about-me p,
   .portfolio-wrapper p {
     font-size: 1rem;
-    margin-left: 15px;
     margin-top: 0;
-    margin-bottom: -10px;
-    width: 105%;
+    width: 100%;
+    margin-left: 20px;
   }
 
   .about-me h3,
@@ -847,7 +849,8 @@ h3:after {
   .about-me p {
     width: 150%;
     margin-left: 35px;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   .portfolio {
@@ -855,10 +858,8 @@ h3:after {
   }
 
   .portfolio-wrapper p {
-    width: 50%;
-    margin-left: 195px;
+    width: 1400px;
     margin-bottom: 15px;
-    margin-top: -30px;
   }
 
   .project-container {
@@ -1005,6 +1006,7 @@ h3:after {
     padding: 0 20px;
     box-sizing: border-box;
     margin-left: 30px;
+    margin-bottom: 40px;
   }
 
   .name h1 {
@@ -1033,6 +1035,7 @@ h3:after {
     width: 100%;
     max-width: 100%;
     margin-left: 40px;
+    margin-bottom: 20px;
   }
 
   .about-me p {
@@ -1205,6 +1208,9 @@ h3:after {
 
   .name {
     width: 100%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-right: 0px;
   }
 
   .name h1,
@@ -1272,7 +1278,10 @@ h3:after {
     width: 100%;
     margin-left: 30px;
     font-size: 1.9rem;
-    margin-top: 30px;
+  }
+
+  .about-me {
+    margin-left: 80px;
   }
 
   .about-me h3,
