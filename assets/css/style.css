@@ -1,6 +1,6 @@
 :root {
-  --bg-card: #242424;  
-  --text-primary: #ffffff; 
+  --bg-card: #242424;
+  --text-primary: #ffffff;
   --main-bg-color: #28282b;
   --main-font-color: rgb(168, 178, 209);
   --secondary-font-color: whitesmoke;
@@ -426,7 +426,7 @@ h3:after {
 .project-description,
 .project-description-2,
 .project-description-3,
-.project-description-4, 
+.project-description-4,
 .project-description-5,
 .project-description-6 {
   position: absolute;
@@ -445,7 +445,6 @@ h3:after {
   border: solid 1px rgba(126, 244, 244, 0.2);
   border-radius: 7px;
 }
-
 
 /* Specific portfolio project images */
 .project-1 {
@@ -469,8 +468,6 @@ h3:after {
   background-image: url("../images/Weather\ Dashboard-Tinted.jpg");
 }
 
-
-
 /* Hover effects for project images */
 .project-1:hover {
   background-image: url("../images/hero-bg.jpg");
@@ -490,7 +487,6 @@ h3:after {
 .project-6:hover {
   background-image: url("../images/Weather\ Dashboard.jpg");
 }
-
 
 .project-wrapper:hover .project-image {
   transform: scale(1.1);
@@ -516,7 +512,7 @@ h3:after {
 .contact a span,
 .contact p span,
 .resume a {
-  color: var(--hl-link-color);  
+  color: var(--hl-link-color);
 }
 
 .contact p {
@@ -746,12 +742,11 @@ h3:after {
   .project-cards {
     grid-template-columns: 1fr;
   }
-  
+
   .project-card {
     max-width: 100%;
   }
 }
-
 
 /* Media queries for mobile devices */
 @media only screen and (max-width: 400px) {
@@ -786,14 +781,13 @@ h3:after {
 
   .objective p,
   .about-me p,
-  .portfolio-wrapper p{
+  .portfolio-wrapper p {
     font-size: 1rem;
     margin-left: 15px;
     margin-top: 0;
     margin-bottom: -10px;
     width: 105%;
   }
-
 
   .about-me h3,
   .portfolio h3,
@@ -852,12 +846,12 @@ h3:after {
 
   .about-me p {
     width: 150%;
-        margin-left: 35px;
-        margin-bottom: 45px;
+    margin-left: 35px;
+    margin-bottom: 45px;
   }
 
   .portfolio {
-   margin-top: -150px; 
+    margin-top: -150px;
   }
 
   .portfolio-wrapper p {
@@ -926,7 +920,7 @@ h3:after {
   .scroll-to-top span {
     display: none;
   }
-  
+
   .project-title,
   .project-title-2,
   .project-title-3,
@@ -940,7 +934,7 @@ h3:after {
     margin-right: 150px;
     width: 100%;
     font-size: 1.1rem;
-}
+  }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 767px) {
@@ -978,12 +972,12 @@ h3:after {
     padding: 0 20px;
     box-sizing: border-box;
     width: 100%;
-    margin-right: 0;
+    margin-right: 20px;
   }
 
   .header {
     width: 100%;
-    margin-left: 10px;
+    margin-left: 80px;
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -1038,23 +1032,25 @@ h3:after {
     font-size: 1.4rem;
     width: 100%;
     max-width: 100%;
-    margin-left: 30px;
+    margin-left: 40px;
   }
 
-  .about-me p,
-  .portfolio-wrapper p {
-    width: 140%;
+  .about-me p {
+    width: 120%;
     margin-top: 10px;
     font-size: 1.4rem;
   }
 
   .portfolio-wrapper p {
-    width: 40%;
-    margin-right: 185px;
+    width: 60%;
+    margin-right: 110px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+    font-size: 1.4rem;
   }
 
   .about-me h3 {
-    margin-left: 0px;
+    margin-right: 20px;
   }
 
   .leftside {
@@ -1112,10 +1108,10 @@ h3:after {
   }
 
   .portfolio {
-    padding: 50px 20px;
+    margin-top: -55px;
+    margin-left: 70px;
   }
 
-  .portfolio h3,
   .contact h3,
   .resume h3 {
     text-align: center;
@@ -1130,15 +1126,16 @@ h3:after {
     width: 60%;
     margin-left: 170px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .project-wrapper {
     margin-bottom: 200px;
   }
 
-  
-  .contact, .resume {
-    margin-left: 215px;
+  .contact,
+  .resume {
+    margin-left: 225px;
   }
 
   .contact a,
@@ -1197,7 +1194,6 @@ h3:after {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
-
   .header {
     overflow-x: auto;
   }
@@ -1313,7 +1309,6 @@ h3:after {
     margin-bottom: 10px;
   }
 
-
   .project-description,
   .project-description-2,
   .project-description-3,
@@ -1330,7 +1325,9 @@ h3:after {
     margin-top: 10px;
   }
 
-  .contact a, .contact p, .resume a {
+  .contact a,
+  .contact p,
+  .resume a {
     margin-left: 40px;
     font-size: 1.7rem;
   }
@@ -1458,11 +1455,14 @@ h3:after {
     margin-right: 0;
   }
 
-  .contact, .resume {
+  .contact,
+  .resume {
     margin-left: 200px;
   }
 
-  .contact a, .contact p, .resume a {
+  .contact a,
+  .contact p,
+  .resume a {
     margin-left: 40px;
     font-size: 1.7rem;
   }
@@ -1510,7 +1510,6 @@ h3:after {
     margin-left: 85px;
   }
 }
-  
 
 /* Media queries for specific pixel ranges */
 @media only screen and (min-width: 1150px) {
