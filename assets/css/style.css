@@ -1,12 +1,12 @@
 :root {
+  --bg-card: #242424;  
+  --text-primary: #ffffff; 
   --main-bg-color: #28282b;
   --main-font-color: rgb(168, 178, 209);
   --secondary-font-color: whitesmoke;
   --hl-link-color: rgb(46, 202, 202);
   --pjd-color: rgb(39, 39, 42);
-  --main-font: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  --font-robo: "Montserrat", sans-serif;
-  --font-title: "Julius Sans One", sans-serif;
+  --transition-speed: 0.3s;
 }
 
 * {
@@ -384,6 +384,7 @@ h3:after {
 }
 
 .project-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -406,6 +407,8 @@ h3:after {
 .project-image {
   position: relative;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
   padding-bottom: 75%;
   background-size: cover;
   background-position: center;
@@ -420,11 +423,11 @@ h3:after {
 .project-title-5,
 .project-title-6 {
   position: absolute;
-  top: -40px;
-  left: -2px;
+  top: 10px;
+  left: 10px;
   background-color: transparent;
   padding: 5px 10px;
-  color: var(--secondary-font-color);
+  color: red;
   font-family: var(--font-title);
   font-size: 28px;
   z-index: 2;
@@ -612,6 +615,167 @@ h3:after {
     opacity: 1;
   }
 }
+
+/* Project Cards Styles */
+.projects-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.project-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+  width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Overlay styling */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Make the overlay less opaque */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 2; /* Ensures the overlay is above the image */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show overlay on hover */
+.project-image:hover .project-overlay {
+  opacity: 1; /* Fully visible on hover */
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.project-content p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background: transparent;
+}
+
+.tech-tag {
+  background: #fff;
+  color: #0369a1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.project-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  border-radius: 4px;
+  padding-top: 1rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  margin: 5px;
+  color: #0369a1;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+
+.demo-link {
+  color: #0369a1;
+}
+
+.github-link {
+  color: #4b5563;
+}
+
+.demo-link:hover,
+.github-link:hover {
+  background-color: #f3f4f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card {
+    max-width: 100%;
+  }
+}
+
 
 /* Media queries for mobile devices */
 @media only screen and (max-width: 400px) {
@@ -1081,6 +1245,7 @@ h3:after {
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
+
   .header {
     overflow-x: auto;
   }
@@ -1188,7 +1353,6 @@ h3:after {
 
   .project-image {
     padding-bottom: 75%;
-    margin-left: 10px;
   }
 
   .project-title,
@@ -1197,7 +1361,8 @@ h3:after {
   .project-title-4,
   .project-title-5,
   .project-title-6 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
 
