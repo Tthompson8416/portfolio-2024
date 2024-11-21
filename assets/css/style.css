@@ -183,25 +183,6 @@ section {
   margin: 0 auto;
 }
 
-.btn {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.btn a {
-  color: var(--hl-link-color);
-  border: 1px solid var(--hl-link-color);
-  border-radius: 4px;
-  padding: 15px;
-  display: inline-block;
-}
-
-.btn a:hover {
-  background-color: rgba(46, 202, 202, 0.1);
-  text-decoration: none;
-}
-
 /* External contact links section */
 .leftside {
   position: fixed;
@@ -338,10 +319,11 @@ h3:after {
 }
 
 /* About me section */
-.about-me {
+.about-me,
+.portfolio-wrapper p {
   color: var(--main-font-color);
   font-family: var(--main-font);
-  max-width: 700px;
+  max-width: 80%;
   margin: 100px auto;
   text-align: center;
 }
@@ -350,7 +332,8 @@ h3:after {
   margin-bottom: 30px;
 }
 
-.about-me p {
+.about-me p,
+.portfolio-wrapper p {
   font-size: 2rem;
   margin-top: 50px;
 }
@@ -802,38 +785,24 @@ h3:after {
   }
 
   .objective p,
-  .about-me p {
+  .about-me p,
+  .portfolio-wrapper p{
     font-size: 1rem;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 0;
     margin-bottom: -10px;
-  }
-
-  .btn {
-    width: 50%;
-    padding: 0;
-    margin-left: 25px;
-    margin-top: 15px;
-  }
-
-  .btn a {
-    font-size: 1rem;
-    padding: 4px;
+    width: 105%;
   }
 
   .about-me h3,
   .portfolio h3,
   .contact h3,
   .resume h3 {
-    margin-left: 25px;
+    margin-left: 35px;
   }
 
   .about-me {
-    margin: 0;
-  }
-
-  .about-me p {
-    width: 95%;
+    margin-top: 35px;
   }
 
   .leftside {
@@ -878,6 +847,23 @@ h3:after {
   }
   .v2 {
     margin-top: 30px;
+  }
+
+  .about-me p {
+    width: 150%;
+        margin-left: 35px;
+        margin-bottom: 45px;
+  }
+
+  .portfolio {
+   margin-top: -150px; 
+  }
+
+  .portfolio-wrapper p {
+    width: 50%;
+    margin-left: 195px;
+    margin-bottom: 15px;
+    margin-top: -30px;
   }
 
   .project-container {
@@ -1023,6 +1009,7 @@ h3:after {
     text-align: center;
     padding: 0 20px;
     box-sizing: border-box;
+    margin-left: 30px;
   }
 
   .name h1 {
@@ -1050,32 +1037,23 @@ h3:after {
     font-size: 1.4rem;
     width: 100%;
     max-width: 100%;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
-  .btn {
-    width: 130%;
-    margin-left: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .btn a {
-    margin-left: 45px;
-    width: auto;
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-
-  .about-me p {
-    width: 110%;
-    margin-left: 45px;
+  .about-me p,
+  .portfolio-wrapper p {
+    width: 140%;
     margin-top: 10px;
     font-size: 1.4rem;
   }
 
+  .portfolio-wrapper p {
+    width: 40%;
+    margin-right: 185px;
+  }
+
   .about-me h3 {
-    margin-left: 50px;
+    margin-left: 0px;
   }
 
   .leftside {
@@ -1300,10 +1278,6 @@ h3:after {
     margin-top: 30px;
   }
 
-  .btn a {
-    margin-left: 55px;
-  }
-
   .about-me h3,
   .portfolio h3 {
     margin-left: 30px;
@@ -1379,6 +1353,7 @@ h3:after {
 
   .header a {
     font-size: 1.6rem;
+    padding: 5px;
   }
 
   .name {
@@ -1514,10 +1489,6 @@ h3:after {
   }
 
   .objective p {
-    font-size: 2rem;
-  }
-
-  .btn {
     font-size: 2rem;
   }
 
